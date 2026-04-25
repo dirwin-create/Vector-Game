@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Game - Main Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #00ff00;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px #00ff00;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: #ffffff;
+            font-size: 1.2em;
+            margin-bottom: 50px;
+            opacity: 0.9;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        button {
+            padding: 20px 30px;
+            font-size: 1.3em;
+            font-weight: bold;
+            border: 2px solid #00ff00;
+            background: rgba(0, 255, 0, 0.1);
+            color: #00ff00;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+        }
+
+        button:hover {
+            background: rgba(0, 255, 0, 0.2);
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            button {
+                padding: 15px 20px;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>VECTOR GAME</h1>
+        <p class="subtitle">Choose your game mode</p>
+        
+        <div class="button-container">
+            <button onclick="window.location.href='Space_shooter_V5.htm?mode=solo'">
+                <span class="emoji">🎮</span> Solo Mode
+            </button>
+            
+            <button onclick="window.location.href='Space_shooter_V5.htm?mode=multiplayer'">
+                <span class="emoji">🌐</span> Multiplayer Online
+            </button>
+            
+            <button onclick="window.location.href='Space_shooter_V5.htm?mode=local'">
+                <span class="emoji">👥</span> 2 Player Local
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+name=index.html
